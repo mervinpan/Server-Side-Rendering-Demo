@@ -1,0 +1,33 @@
+{
+  "name": "ssr-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-side-rendering.js",
+  "scripts": {
+    "server-dev": "NODE_ENV=development nodemon ./server/server.bundle.js",
+    "server-prod": "NODE_ENV=production nodemon ./server/server.bundle.js",
+    "build-dev": "webpack -d --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/preset-react": "^7.10.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "node": "^14.3.0",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1",
+    "webpack": "^4.43.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "react-dom": "^16.13.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
