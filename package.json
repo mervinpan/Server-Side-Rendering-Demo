@@ -6,28 +6,30 @@
   "scripts": {
     "server-dev": "NODE_ENV=development nodemon ./server/server.bundle.js",
     "server-prod": "NODE_ENV=production nodemon ./server/server.bundle.js",
-    "build-dev": "webpack -d --watch"
+    "build-dev": "webpack -d --mode=development --watch --display-modules"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.10.0",
-    "@babel/preset-env": "^7.10.0",
-    "@babel/preset-react": "^7.10.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "node": "^14.3.0",
-    "path": "^0.12.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.0-0",
+    "css-loader": "^3.6.0",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
     "styled-components": "^5.1.1",
     "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
-  },
-  "devDependencies": {
-    "react-dom": "^16.13.1",
-    "webpack-cli": "^3.3.11"
   }
 }
