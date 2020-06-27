@@ -6,7 +6,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     let initialData;
-
     if (props.images) {
       initialData = props.images
     } else {
