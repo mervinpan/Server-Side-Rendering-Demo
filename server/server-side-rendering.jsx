@@ -13,8 +13,10 @@ import template from './template.js'
 app.use(express.static('client/dist/'));
 app.use(compression())
 
-app.get('/:id', (req, res) => {
-  var appString = ReactDOMServer.renderToString(<App/>)
-  var html = template(appString)
+var initialData = 'https://i.redd.it/2105ufb7aa751.jpg'
+
+app.get('*', (req, res) => {
+  var appString = ReactDOMServer.renderToString(<App images={initialData}/>)
+  var html = template(appString, initialData)
   res.send(html)
 })

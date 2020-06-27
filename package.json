@@ -6,7 +6,8 @@
   "scripts": {
     "server-dev": "NODE_ENV=development nodemon ./server/server.bundle.js",
     "server-prod": "NODE_ENV=production nodemon ./server/server.bundle.js",
-    "build-dev": "webpack -d --mode=development --watch --display-modules"
+    "build-dev": "webpack -d --mode=development --watch --display-modules",
+    "build-prod": "webpack -d --mode=production --watch --display-modules"
   },
   "author": "",
   "license": "ISC",
